@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Ice Mine Slots</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .privacy-page {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #7dd3fc;
+            text-decoration: none;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        
+        .back-button:hover {
+            color: #38bdf8;
+        }
+        
+        .privacy-content {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 50px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+        
+        .privacy-content h1 {
+            color: #38bdf8;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .privacy-content h2 {
+            color: #7dd3fc;
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+        }
+        
+        .privacy-content p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: #cbd5e1;
+        }
+        
+        .privacy-content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .privacy-content li {
+            margin-bottom: 10px;
+            color: #cbd5e1;
+        }
+        
+        .highlight-box {
+            background: rgba(14, 165, 233, 0.1);
+            border-left: 4px solid #0ea5e9;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .policy-link {
+            display: inline-block;
+            background: #0ea5e9;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .policy-link:hover {
+            background: #38bdf8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
+        }
+        
+        .update-date {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(56, 189, 248, 0.2);
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .privacy-page {
+                padding: 40px 15px;
+            }
+            
+            .privacy-content {
+                padding: 30px 20px;
+            }
+            
+            .privacy-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-page">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        
+        <div class="privacy-content">
+            <h1>Privacy Policy</h1>
+            
+            <div class="highlight-box">
+                <h2>Key Information</h2>
+                <p><strong>Ice Mine Slots</strong> is a completely free social game intended for entertainment purposes only.</p>
+                <p>The game does not contain real money gambling elements and does not require financial investment.</p>
+                
+                <div style="margin-top: 25px;">
+                    <p><strong>Full Privacy Policy Text:</strong></p>
+                    <a href="https://www.freeprivacypolicy.com/live/ba49458d-ab4f-42ae-b543-f1bd1cd8da4f" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="policy-link">
+                        <i class="fas fa-external-link-alt"></i> Open Full Privacy Policy
+                    </a>
+                </div>
+            </div>
+            
+            <h2>Key Points</h2>
+            <ul>
+                <li>The app does not require real money bets</li>
+                <li>All game elements are for entertainment only</li>
+                <li>The game does not collect personal data without explicit user consent</li>
+                <li>Content is intended for 18+ audience</li>
+            </ul>
+            
+            <h2>Entertainment Content</h2>
+            <p>Ice Mine Slots provides game content exclusively for entertainment purposes. The game simulates slot machine gameplay without the possibility of winning real money or valuables.</p>
+            
+            <h2>Age Restrictions</h2>
+            <p>Access to the game is permitted to persons aged 18 and over. The game is not intended for children and does not contain content aimed at a child audience.</p>
+            
+            <h2>Responsibility</h2>
+            <p>The game developers are not responsible for any possible consequences associated with the use of the application. The game is provided "as is" exclusively for entertainment purposes.</p>
+            
+            <div class="update-date">
+                <p><i class="fas fa-calendar-alt"></i> Last updated: <span id="current-date"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Ice Mine Slots. All rights reserved.</p>
+            <p class="small">Game is for entertainment purposes only.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Set current date
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>
