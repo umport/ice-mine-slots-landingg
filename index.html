@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Mine Slots | Free Social Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Ice Mine Slots - Free social slot game for entertainment. Play for fun!">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="title">
+                <span class="gradient-text">ICE MINE SLOTS</span>
+            </h1>
+            <p class="subtitle">Free Social Game with Icy Treasures</p>
+            
+            <div class="crystal-animation">
+                <div class="crystal crystal-1"></div>
+                <div class="crystal crystal-2"></div>
+                <div class="crystal crystal-3"></div>
+            </div>
+            
+            <div class="cta">
+                <div class="coming-soon">
+                    <h2><i class="fas fa-gem"></i> COMING SOON!</h2>
+                    <p>Get ready for an exciting adventure in the frozen mines</p>
+                    <div class="features">
+                        <span><i class="fas fa-check"></i> Free to Play</span>
+                        <span><i class="fas fa-check"></i> Social Entertainment</span>
+                        <span><i class="fas fa-check"></i> No Real Money Bets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">❄️</div>
+                    <h3>Icy Graphics</h3>
+                    <p>Stunning visual effects and crystal animations</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Social Play</h3>
+                    <p>Play for free in an engaging social atmosphere</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Gameplay</h3>
+                    <p>Dynamic rounds and exciting bonus levels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Important Information</h2>
+            <div class="info-box">
+                <p><strong>Ice Mine Slots</strong> is a completely free social game intended for entertainment purposes only.</p>
+                <p>The game does not contain real money gambling elements and does not require financial investment.</p>
+                <p>Content is intended for 18+ audience and is for entertainment only.</p>
+                
+                <a href="privacy-policy.html" class="privacy-link">
+                    <i class="fas fa-shield-alt"></i> Privacy Policy
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Ice Mine Slots. All rights reserved.</p>
+            <p class="small">Game is for entertainment purposes only.</p>
+            <div class="social-icons">
+                <span class="icon-placeholder"><i class="fas fa-gamepad"></i></span>
+                <span class="icon-placeholder"><i class="fas fa-users"></i></span>
+                <span class="icon-placeholder"><i class="fas fa-dice"></i></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Script -->
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Crystal animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const crystals = document.querySelectorAll('.crystal');
+            crystals.forEach((crystal, index) => {
+                crystal.style.animationDelay = (index * 0.3) + 's';
+            });
+        });
+    </script>
+</body>
+</html>
